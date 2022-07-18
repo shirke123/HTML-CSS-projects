@@ -1,0 +1,970 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainheader
+        {
+            left:100px;
+            right: 300px;
+            height: 470px;
+            width:1330px;
+            background-color:gray;
+            /* border: 1px solid black; */
+            color: white;
+            /* opacity:0.5; */
+        }
+        .nav img{
+            float:right;
+            margin-right: 150px;;
+        }
+        h1
+        {  
+            font-size: 20px;
+            margin: top;
+            margin-left: 100px;
+            color: white;
+
+         }
+
+        h2{
+            font-size: 40px;
+            color:black;
+            margin-top:50px;
+            margin-left: 100px;
+            color: white;
+
+        }
+        .card2{
+        position: absolute;
+            width:250px;
+            height: 150px;
+            /* border:1px solid black; */
+            border-radius: 9%;
+            margin-left: 780px;
+            top:270px;
+            /* margin-top: 400px; */
+            /* background-image: linear-gradient(rgb(243, 180, 180),rgb(171, 248, 171),rgb(240, 240, 126 ) */
+            background-image:linear-gradient(to right ,lightblue 20%, White 70%,black 30%);
+
+            opacity:0.6;
+            transform:rotate(-9deg);
+        }
+        .card1{
+            position: absolute;
+            width:250px;
+            height: 150px;
+            /* border:1px solid black; */
+            border-radius: 9%;
+            /* margin-left: 800px; */
+            top:150px;
+            left: 800px;
+            background-color: yellow;
+            opacity:0.6;
+            transform:rotate(25deg);
+            background-image:linear-gradient(to bottom,yellow 50%,black 50%);
+        }
+        
+       .mainheader p{
+            font-size: 15px ;
+            margin-left: 100px;
+            
+        }
+       .button1 button{
+            margin-left: 100px;
+            background-color: yellow;
+            border-radius: 9%;
+            padding: 10px;
+            font-weight: bolder;
+            border: none;
+         }
+         .button2 button{
+             position: absolute;
+            margin-left: 250px;
+            float: left;
+            border-radius: 9%;
+            padding: 10px;
+             top:370px;
+             border: 1px solid white;
+             background-color: grey;
+            color: white;   
+        }        
+        .mainheader h5{
+            
+        width: 300px;
+        height: 200px;
+        position:absolute;
+        border: 1px solid black;
+        border-radius: 5%;
+        margin-left:700px;
+        margin-top: 10px;
+
+      }     
+      .container
+      {
+            left:100px;
+            right: 300px;
+            height: 400px;
+            width:1330px;
+            background-color:#e0fff5 ;
+             /* opacity:0.1; */
+            /* border: 1px solid black; */
+      }
+      /* .container1 
+      {
+          height:150px;
+          width:1330px;
+          border: 1px solid black;
+      } */
+      h3{
+          font-size: 30px;
+          margin-left:100px;
+      }
+      .container1 p{
+          position: absolute;
+          float:right;
+          top:490px;
+          left:800px;
+          text-align: right;
+          font-weight: bolder;
+      }
+      .box1
+      {
+          position: absolute;
+          height:150px;
+          width:250px;
+          /* border: 1px solid black; */
+          margin:100px;
+          top:550px;
+      }
+     
+     .box ,h4 ,h5 ,h6{
+          font-size: 15px;
+          font-weight: bolder;
+          margin:15px;
+      }
+    .box,p{
+        font-size: 15px;
+        font-weight: normal;
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    
+      .box2
+      {
+        position: absolute;
+         height:180px;
+          width:250px;
+          /* border: 1px solid black; */
+          background-color: white;
+          float: left;
+          margin:100px;
+          top:550px;
+          margin-left: 400px;
+    
+      }
+      .box3
+      {
+        position: absolute;
+         height:150px;
+          width:250px;
+          /* border: 1px solid black; */
+          /* margin:100px; */
+          float: left;
+          margin:100px;
+          top:550px;
+          margin-left: 700px;
+      }
+      .sub-contanier
+      {
+          top:880px;
+          width:1330px;
+          height:400px;
+          /* border: 1px solid black; */
+          background-color: lightblue;
+          /* opacity:0.2; */
+
+      }
+       .one{
+          position: absolute;
+          height:180px;
+          width:200px;
+          /* border: 1px solid black; */
+          margin:100px;
+          border-radius: 5%;
+          top:870px;
+          background-color: white;
+        }
+        .one h6 {
+            margin:10px;
+            font-size:15px;
+            font-weight: bold;
+        }
+        .one h2 h3
+        {
+            margin:5px;
+            font-size:15px;
+            font-weight: normal;
+
+        }
+       .one .imag 
+        {
+            position: absolute;
+            float:right;
+            top:7px;
+            left: 150px;
+            /* top:800px; */
+        }
+       
+        .button11 button
+        {
+            position: absolute;
+            padding:4px;
+            margin:30px;
+            border: none;
+            /* background-color: gray; */
+            color:rgb(8, 201, 8);
+            font-size: 12px;
+        }
+       .two{
+          position: absolute;
+          height:130px;
+          width:150px;
+          /* border: 1px solid black; */
+          margin:350px;
+          top:590px;
+          border-radius: 5%;
+          background-color: white;
+
+      } 
+      .button12 button
+      {
+          position: absolute;
+          color:rgb(7, 209, 7);
+          margin:10px;
+          height:20px;
+          width:130px;
+          border: none;
+          /* padding:11px; */
+      }
+     
+        .three{
+          position: absolute;
+          height:100px;
+          width:250px;
+          /* border: 1px solid black; */
+           margin:250px;
+           top:860px; 
+           border-radius: 5%;
+           background-color: white;
+      }  
+      .three h6{
+          position: absolute;
+          left:90px;
+          font-weight: normal;
+          top:0px;
+        
+      }
+           
+      .sub-contanier h2 {
+          position: absolute;
+         color: black;
+          /* float:right; */
+          left: 650px;
+          /* margin:100px; */
+          font-size: 30px;
+          top:900px;
+      } 
+       .sub-contanier p{
+           position: absolute;
+          float: right;
+          font-family:Arial, Helvetica, sans-serif;
+          top:1030px;
+          margin:50px; 
+          left: 700px;
+       }
+       .bu button{
+           position: absolute;
+           padding:9px;
+           top:1150px;
+           left:750px;
+           background-color: yellow;
+           font-weight: bolder;
+           border-radius: 10%;
+           border: none;
+       }
+       .sub-container2
+       {
+         top:800px;
+          width:1330px;
+          height:350px;
+          /* background-color:darkgrey ; */
+
+          /* border: 1px solid black; */
+ 
+       }
+       .sub-container2 p{
+           position: absolute;
+           margin:100px;
+           top:1330px;
+       }
+       .firstcard
+       {
+            width:250px;
+            height: 150px;  
+             border: 1px solid black;
+             position: absolute;
+             float: right;
+             left:850px;
+             top:1330px;
+             z-index: 2;
+             border-radius: 5%;
+            
+       }
+       li {
+           float:right;
+           list-style-type: none;
+           color: red;
+       }
+    
+       .firstcard
+      {
+            width:220px;
+            height: 150px;  
+             border: 1px solid black;
+             position: absolute;
+             float: left;
+             left:700px;
+             top:1430px;
+             /* z-index: 3; */
+            background-color: #121f12;
+             border-radius:5%;
+            
+      }
+      .secondcard
+       {
+            width:240px;
+            height: 150px;  
+             border: 1px solid black;
+             position: absolute;
+             float: right;
+             left:850px;
+             top:1330px;
+             /* z-index: 2; */
+             border-radius: 5%;
+            
+       }
+      .thirdcard
+      {
+            width:240px;
+            height: 90px;  
+             border: 1px solid black;
+             position: absolute;
+             float: right;
+             left:850px;
+             top:1580px;
+             border-radius:5%;
+            
+      }
+      .list
+      {
+          position: absolute;
+          top:1370px;
+          margin:100px;
+          padding:4px;
+          width: 200px;
+          height: 100px;
+          /* border: 1px solid black; */
+      }
+      .listimg
+      {
+        left:90px;
+        position: absolute;
+        top:1480px;
+      }
+      .list2
+      {
+         position: absolute;
+          top:1470px;
+          /* margin:100px; */
+          padding:4px;
+          font-weight: none;
+          left:300px;
+          float:right;
+          width: 200px;
+          height: 100px;
+          /* border: 1px solid black; */
+
+      }
+      .list2img
+      {
+        left:290px;
+        position: absolute;
+        top:1480px;
+      }
+      .sub-contanier3
+      {
+          top:890px;
+          width:1330px;
+          height:400px;
+          /* border: 1px solid black; */
+          background-color:#e0fff5 ;
+ 
+
+      }
+      .sub-contanier3 h1 {
+          position: absolute;
+               font-weight: bolder;
+               color:black;
+               font-size: 30px;
+               float: right;
+               left:660px;
+      }
+      .sub-contanier3 p {
+          position: absolute;
+               
+               color:black;
+               font-size: 15px;
+               float: right;
+               left:740px;
+               top:1830px;
+      }
+      .button3 button
+      
+      {
+          position: absolute;
+          float: right;
+          top:1900px;
+          left: 770px;
+          padding: 10px;
+          background-color: yellow;
+          border: none;
+          font-weight: bolder;
+      }
+
+      .circle1 
+    {
+        position: absolute;
+        border-radius:70%;
+        border: 2px solid white;
+        /* background-color: white; */
+        width: 350px;
+        height: 350px;
+        left: 10px;
+        top:1720px;
+    }
+    .small3
+    {
+        border-radius: 80%;
+        position: absolute;
+        left:140px;
+        top:0px;
+        width:60px;
+        height:60px;
+        border: 2px solid white;
+        background-color: white;
+
+    }
+    .image4
+
+    {
+        position: absolute;
+        top:20px;
+        left:0px;
+    }
+    .small3:hover{
+        border-color:skyblue;
+    }
+    .small4
+    {
+        border-radius: 80%;
+        position: absolute;
+        left:0px;
+        top:140px;
+        width:60px;
+        height:60px;
+        border: 2px solid white;
+        background-color: white;
+
+    }
+    .small4:hover{
+        border-color:skyblue;
+    }
+    .image5
+
+    {
+        position: absolute;
+        top:0px;
+        /* left:3px; */
+    }
+    .small5
+    {
+        border-radius: 80%;
+        position: absolute;
+        left:315px;
+        top:200px;
+        width:60px;
+        height:60px;
+        float: right;
+        border: 2px solid white;
+        background-color: white;
+
+    }
+    .small5:hover{
+        border-color:skyblue;
+    }
+    .image6
+
+    {
+        position: absolute;
+        top:100px;
+        left:3px;
+    }
+    .circle2
+    {
+        position: absolute;
+        border-radius: 60%;
+        border: 2px solid white;
+        width: 200px;
+        height: 200px;
+        left: 80px;
+        margin-top: 90px;;
+    }
+    .small
+    {
+        border-radius: 80%;
+        position: absolute;
+        left:150px;
+        top:20px;
+        width:60px;
+        height:60px;
+        border: 2px solid white;
+        background-color: white;
+    }
+    .small:hover{
+        border-color:skyblue;
+    }
+    .image
+
+    {
+        position: absolute;
+        top:20px;
+        /* left:4px; */
+        width: 20px;
+        height: 20px;
+    }
+    .small1
+    {
+        border-radius: 80%;
+        position: absolute;
+        left:70px;
+        top:160px;
+        width:60px;
+        height:60px;
+        border: 2px solid white;
+        background-color: white;
+    }
+    .small1:hover{
+        border-color:skyblue;
+    }
+    .image1
+
+    {
+        position: absolute;
+        top:20px;
+        /* left:8px; */
+    }
+    .small2
+    {
+        border-radius: 80%;
+        position: absolute;
+        left:0px;
+        top:0px;
+        width:60px;
+        height:60px;
+        border: 2px solid white;
+        background-color: white;
+    }
+    .small2:hover{
+        border-color:skyblue;
+    }
+    .image2
+
+    {
+        position: absolute;
+        top:25px;
+        /* left:8px; */
+    }
+
+    
+    .circle3
+    {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        left: 150px;
+        margin-top: 150px;;
+    }
+    .image3 {
+        top:10px;
+        left: 30px;
+    }
+     .circle1:hover {
+        border:2px solid skyblue;  }
+
+    .circle2:hover{
+        border:2px solid skyblue;  }
+    .circle3:hover  {
+    border:2px solid skyblue;}
+
+
+    .sub-contanier4
+    {
+        position: absolute;
+        border: 1px solid black;
+        width:1330px;
+        top:2090px;
+        height:200px;
+        background-color:  #121f12;;
+        opacity: 0.8;
+
+    }
+
+ 
+ .sub-contanier4 p{
+        position: absolute;
+        top:100px;
+        color:white;
+        float: left;
+        left: 130px;
+    } 
+    .sub-contanier4 h1{
+        font-size: 33px;
+        color: white;
+        float: left;
+        left:50px;
+    }
+    .button13 button{
+        position: absolute;
+        float: right;
+        padding: 8px;
+        background-color: yellow;
+        font-weight: bolder;
+        left: 1000px;
+        border: none;
+        top:80px;
+        border-radius: 15%;
+
+    }  
+     .sub-contanier5
+{
+    width:1330px;
+    height:300px;
+    /* border:1px solid black; */
+    background-color:  #121f12;
+    
+    opacity: 0.9;
+    top:2290px;
+    position: absolute;
+
+}
+    .sub-contanier5 h2{
+        position: absolute;
+        font-size: 50px;
+        left:100px;
+    }
+    .sub-contanier5 h3{
+     position: absolute;
+        font-size: 15px;
+        color:white;
+        top:120px;
+        left: 100px;
+
+    } 
+    /* .sub-contanier5 h4 ,h5 ,h6{
+        color: white;
+        font-size: 15px;
+    } */
+
+      .main h4{
+        color:black;
+        top:2500px;
+        left:900px;
+        text-align: center;
+        padding: 20px;
+        /* text-decoration: none; */
+        font-size: 20px;
+        color: white;
+    }  
+    .center
+    {
+      top:1500px;
+      margin-left: 600px; 
+      margin-right: 500px;  
+ }
+    table,tr,td{
+        /* position:relative; */
+        /* border: 1px solid white; */
+       /* margin-left:800px; */
+        top:2000px;
+        color:white;
+        padding: 7px;
+        /* margin:10px; */
+        font-size: 18px;
+        text-align: center;
+        width:30%;
+    }
+    
+     
+    </style>
+</head>
+<body>
+    <div class="mainheader">
+        <div class="nav">       
+            
+<img src="https://cdn-icons.flaticon.com/png/512/4024/premium/4024609.png?token=exp=1644431536~hmac=76e1c6f04a9623c818554c9ae3d06b04" alt="" width="20px"height="20px">
+        <h1>pay</h1>
+        </div>
+
+      <h2>Easy & digital <br>Online <br>Payment<br>Solutions</h2>
+
+      <div class="card1">  L <br>    </div>
+      <div class="card2"> L</div>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Autem aut nisi harum,
+        exercitationem sit, delectus recusandae dignissimo</p>
+        <div class="button1">
+        <button>Get Started</button>
+        </div>
+        <div class="button2">
+        <button>Learn More</button>
+        </div>
+       
+        </div> 
+
+        <div class="container">
+            <div class="container1">
+            <h3>You do the business,<br>we'll handle the<br>Money</h3>
+            <p>Everythings you need  to accept cards payments <br>and graw your business anywhere on a planet</p>
+            </div>
+
+        <div class="box">
+        <div class="box1">
+             <div class="img1">
+            <img src="img1.png" width="50px"height="50px">
+            </div>
+
+            <h4>every card network</h4>
+            <p style="font-size:15px">Accept visa card,master card discover ,JCB,Union Pay and a bunch More with a few simple taps</p>
+        </div>
+
+         <div class="box2">
+             <img src="img2.png"width="50px"height="50px">
+            <h5>contactless payment</h5>
+            <p>Tap to charge contactless cards hoild a card aganist your device NFC chip and boom you are in business</p>
+        </div>
+
+        <div class="box3">
+            <img src="img3.png"width="50px"height="50px">
+            <h6>multicurrancy</h6>
+            <p>charge in over 135 conurries let customers [ay in their native currenacy you gat paid in yours</p>
+        </div> 
+        </div>
+</div>
+
+        <div class="sub-contanier">
+            <div class="one">
+               <h6>Sent! <br>10 march at 11.00am</h6>
+               <div class="imag">
+               <img src="imag..jpg"width="50px" height="50px">
+               </div>
+
+               <img src="img4.png"width="100px" height="20px">
+              
+               <!-- <img src="imag1" width="40px" height="40px"> -->
+               <div style="font-weight:normal">Trascations ID:</div>
+               <div>2345679056</div>
+
+               <div class="button11">
+                   <button>Trasactions histroy</button>
+               </div>
+           </div>
+
+           <div class="two">
+               <h6>Balance<br>-$4950.00</h6>
+               <div class="button12">
+                   <button>Details</button>
+               </div>
+           </div>
+         <div class="three">
+               <h6> You recived <b>-$450.00</b><br>from mahammod <br>shahib</h6>
+           </div>
+
+   <h2>Issue  Virtual & <br>Phycical Cards<br>with build-in rules</h2> 
+<p>Enable faster puarching by giving every employee access to the funds<br>they need in a safe and secure manner</p>
+
+<div class="bu">
+    <button>Get started</button>
+</div>
+</div>
+  
+ <div class="sub-container2">
+    <h3>Easy Control your<br>billing & invoicing</h3>
+    <p>Enable faster puarching by giving every employee <br>access to the funds they need in a safe.
+        </p>
+
+        <div class="list">
+            <h4>Generate on invoice</h4>
+            <h5>Get paid fast globlly</h5>
+       </div>
+
+       <div class="listimg">
+        <img src="https://ak.picdn.net/shutterstock/videos/23039263/thumb/1.jpg"width="30px" height="30px"><br>
+
+        <img src="https://ak.picdn.net/shutterstock/videos/23039263/thumb/1.jpg"width="30px" height="30px">
+    </div>
+
+
+       <div class="list2">
+    <h6>Send an invoice</h6>
+    <h5>Simplify oprations</h5>
+    </div>
+    <div class="list2img">
+        <img src="https://ak.picdn.net/shutterstock/videos/23039263/thumb/1.jpg"width="30px" height="30px"><br>
+
+        <img src="https://ak.picdn.net/shutterstock/videos/23039263/thumb/1.jpg"width="30px" height="30px">
+    </div>
+        
+        <div class="firstcard">
+             <h1>5000 0000 0000 0000</h1> 
+        </div>
+        <div class="secondcard">
+            <h1 style="color:black">Transations</h1>
+                
+                <img src="images.png"width="20px"height="20px">
+                <img src="images1.png"width="20px"height="20px">
+
+                <img src="images.png"width="20px"height="20px">
+                <ul>
+                <li>Udamy-$120.00</li>
+                <li>Udamy-$120.00</li>
+                <!-- <img src="images.png"width="20px"height="20px"> -->
+                <li>NetFix  -$100.00</li>
+            </ul>
+        </div>
+        <div class="thirdcard">
+        <div>Visa</div>
+        <img src="https://s3-alpha-sig.figma.com/img/061b/b107/e1e8605230d900ec14158f227664a78e?Expires=1646006400&Signature=dBXQFzgICmq49MOXYJw6~aL1usUQLDU0BQLSfWK6VyF8gQXmx-Hyc5ck~d~9brov4uTcgQHhW2zrH-za-rFe8qQbX~5ACwwJ0go-W-qKN-LrbeHYyUFkOhmtiHCmX3fij9jp3DxbpKkb2ehQMBL-6Mdqvctgp-iwj7Rf9aMPeKbAL56pHQcUK2lNp2Mm85Nm3X5Cz1-SvXtjjr6Mrl73pE1LuRgjWOOJglJKgdy39Aa6RrjYBT8tbxzji6WqE1novMdyj~OtTCS5kmhlEJHBekctBCxRJRr3LaAac3XEHTmh~O6VK81rB4vtX5bWvoFaiCh17AJ7NRx6zjOoN7KIyQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"width="40px"height="40px">
+
+        </div>
+</div>
+
+ <div class="sub-contanier3">
+     <h1>We're fexiable with<br>our 2500+ parnters</h1>
+     <p>Enable faster puarching by giving every employee <br>access to the funds they need in a safe and 
+        secure manner</p>
+        <div class="button3">
+               <button>Learn More</button>
+            </div>
+
+            <div class="circle1">
+                <div class="small3">
+                    <div class="image4">
+                        <img src="https://s3-alpha-sig.figma.com/img/f5b2/777d/20d6528293de2b296cee076fbc4c437e?Expires=1645401600&Signature=ZZeLxjSf30FROTDiy-Pd4f57mU6pB8985-Q5I~IWvSuH1byXP6NFHZ~~HsCWAm1OQGDjEPnEQthmQMnj1e-d0shhiEZaqTyQDDSUX2utSqgV8eMUwyrwEfpj97TiWR29fg0wbmsO3Ab2pjU-ZtGlDcs1xVddQyAWdII7yLDtSfSczcaCQSg6vLJczmCO93XunD8gJ3FQ4ZT76063k7FWZVYWSEwBO8i3j0QjkDr1dZ6jbi13q1uxBI39hoDYaty8gaQJPbmxWgk0PnRnGiAqRZuDg1RDYQ4Phjv9z4tR59iUblwX1TqKDN-AQiN3hDH83MXdHargMqZGNAFlNIPP6Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"width="60px"height="20px">
+                    </div>
+                </div>
+
+                <div class="small4">
+                    <div class="image5">
+                <img src="https://s3-alpha-sig.figma.com/img/e988/a582/2bd92d1f335746d1c2a92a0a76bc0dc5?Expires=1645401600&Signature=aVHVRKbEte8FjAQHMEAGUOc5qx5RdZfS0I6FSaU~2uM0MftHsILGfNOJyZEVuQuPkvf0KwvM96QzPHEn9p8m6NjQGgecjlVl7edNtvd5q628HLt9bWGp-wmYSbIDTU03RJgAEvyF8JOySFmBFi1jQd4VwXoi29-bLb4eIpwo6v2ady~TEhiQRBOmpMfs2DavEBB7VOOpUm~cBs4Xf6cq5OY3yvWFMFQR0B6dB5FP8~cGDju9kcV2JzdFfSf2czIOeIWXxS7K6blmQGgHPqR~kb4Io86eQifLM5bdn9nPr7ufl1T6N6oktWSkrG-pkA62kInRzU26MBJaYF1wE1Ar7Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"width="60px"height="80px"> </div>
+                    </div>
+
+
+                    <div class="small5">
+                        <div class="image6">
+                        </div>
+                        <img src="https://s3-alpha-sig.figma.com/img/720d/0e4e/1b24af04c28b512f5e788cdb7c22ff58?Expires=1645401600&Signature=JSsF2P0SCPRqRkL2ReyVE5EHIzH8fCTRHv7HLmCxhNlYTkt3FsqoivuB8m~SBvXwNvpiIY6jxNZYsJv7NN-ZMquXUBZGKEC7EVnAiUTQSodvgHnIwpil59t9Ae2aBbhBXwc8k-UOqpbOZS9MH6uprBGMPV8OeCkugilWnL0zpAd0oiveR8wUeKp4W1ZAnxrldojQTksgpMrgsfwvn8fAz3sa~ZqnmVM17dWqlbt2C-3Ee8oMQv~TFY~rWqlGwdfcglu9~6Jz2PmZOPtAzUuBlDL7qRxthYUk8zJ5tCMjXR05xFeno-YLl8w~UQGz0FunNLXn7p1ob7nQI-4wvRu9kQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"width="60px"height="20px">
+           </div>
+</div>
+           <div class="circle2">
+              <div class="small">
+               <div class="image">
+           <img src="image2.png"width="60px"height="20px"> </div>
+          </div>
+
+          <div class="small1">
+            <div class="image1">
+        <img src="images3.png"width="60px"height="20px"> </div>
+       </div>
+
+       <div class="small2">
+        <div class="image2">
+    <img src="images4.png"width="60px"height="20px"> </div>
+   </div>
+
+
+
+        </div>
+
+        <div class="circle3">
+            <div class="image3">
+            <img src="image1.png"width="60px"height="20px">
+        </div>
+ </div>
+
+   <div class="sub-contanier4">
+     <h1>Lets try our service now!</h1> 
+   <p>Everythings you need  to accept cards payments <br>and graw your business anywhere on a planet</p>
+  <div class="button13">
+      <button>Get Started</button>
+  </div>  
+  </div> 
+
+  <div class="sub-contanier5">
+      <!-- <img src="https://www.figma.com/file/X98c8Q8hHZj7R6EeIAtFh2/Creditcard?node-id=2%3A323"alt=""width= "30px" height="30px"> -->
+  <h2>Pay.</h2>
+  <h3>Dpay.allright reserved 2021</h3>
+<table class="center" >
+    <tr>
+        <th>product</th>
+        <th>features </th>
+        <th>supports </th>
+    </tr>
+    <tr>
+        <td>banking</td>
+        <td>Home</td>
+        <td>accounts Us</td>
+    </tr>
+    <tr>
+        <td>billing</td>
+        <td>binifit</td>
+        <td>Accessiblity</td>
+       
+    </tr>
+    <tr>
+        <td>accounts</td>
+        <td>pricing</td>
+        <td rowspan="1">Customer Service</td>
+     </tr>
+     <tr>
+        <td>Payments</td>
+        <td>blog</td>
+        </tr>
+</table>
+    
+ </div> 
+
+
+
+</div>
+ 
+</body>
+</html> 

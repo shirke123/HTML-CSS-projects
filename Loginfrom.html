@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+            font-family: sans-serif;
+            background-size: cover;
+            background-position: center;
+        }
+        .inbox
+        {
+            width:370px;
+            height: 420px;
+            position:absolute;
+            background:lightblue;
+            /* color:#fff; */
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px,30px;
+        }    
+        .avatar
+        {
+            width:100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top:-50px;
+            left:calc(50% - 50px);
+            
+        }
+        h1{
+            margin: 0;
+            padding:70px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+        .inbox label{
+            margin: 23px;
+            padding: 0;
+            font-weight: bold;
+             
+
+        }
+        .inbox input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .inbox input[type="text"],  input[type="password"]
+        
+    {
+        border: none;
+        /* border-bottom: 1px soild #fff; */
+        background:transparent;
+        outline: none;
+        height: 40px;
+        /* color: #fff; */
+        font-size: 16px;
+       
+
+    }
+    .inbox input [type="Submit"]
+    
+    {
+        border: none;
+        outline:none;
+        height: 60px;
+        width: 60px;
+        color: #fff;
+        font-size: 18px;
+        background:darkcyan;
+        border-radius: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="inbox">
+        <img src="https://cdn1.vectorstock.com/i/thumb-large/38/10/solid-purple-gradient-user-icon-web-icon-vector-23623810.jpg"class="avatar">
+       
+        <h1>Login Here</h1>
+        <form>
+        <label>Username:</label>
+        <input type="text" name="username"placeholder="Enter Username"><br><br>
+
+        <label>password:</label>
+        <input type="text"name="password"placeholder=" Enter Password"><br><br>
+
+        <input type="Submit"value="Submit">
+        
+        <a href="#">forget Password</a>
+
+    </from>
+</body>
+</html>
